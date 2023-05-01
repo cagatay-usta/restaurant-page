@@ -1,0 +1,16 @@
+.hello {
+    color: blue;
+}
+body {
+    background-image: url(./kopernikbg.jpeg);
+    background-size: cover;
+    margin: 0;
+}
+.title {
+    text-align: center;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4rem;
+    margin-top: 0;
+    
+}
