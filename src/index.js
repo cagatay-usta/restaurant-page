@@ -1,7 +1,7 @@
 import "./style.css";
-import loadHomePage from "./pageLoad";
+import display from "./pageLoad";
 
-loadHomePage();
+display();
 
 
 

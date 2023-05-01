@@ -1,7 +1,26 @@
 import createHomePage from "./homePage";
+import createMenu from "./menu";
+
+const content = document.getElementById("content");
+const homeButton = document.querySelector(".home");
+const menuButton = document.querySelector(".menu");
 
 function loadHomePage() {
-    document.getElementById("content").appendChild(createHomePage());
+  if (content.firstChild) {
+    content.removeChild(content.firstChild);
+  }
+  content.appendChild(createHomePage());
 }
 
-export default loadHomePage
+function loadMenuPage() {
+  content.removeChild(content.firstChild);
+  content.appendChild(createMenu());
+}
+
+function display() {
+  loadHomePage();
+  homeButton.addEventListener("click", loadHomePage);
+  menuButton.addEventListener("click", loadMenuPage);
+}
+
+export default display;
