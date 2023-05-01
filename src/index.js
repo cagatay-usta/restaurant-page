@@ -1,6 +1,7 @@
 import "./style.css";
-import component from "./homePage";
+import loadHomePage from "./pageLoad";
+
+loadHomePage();
 
 
-document.getElementById("content").appendChild(component());
 
