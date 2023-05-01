@@ -1,16 +1,41 @@
-.hello {
-    color: blue;
+* {
+    font-family: cursive;
 }
-body {
-    background-image: url(./kopernikbg.jpeg);
-    background-size: cover;
+html {
+    background: url(./kopernikbg.jpeg) no-repeat center center fixed;
     margin: 0;
 }
-.title {
-    text-align: center;
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
     color: antiquewhite;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 4rem;
+    padding: 1rem;
     margin-top: 0;
-    
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 4rem;
+    font-size: 2rem;
+}
+
+nav>div {
+    border-bottom: 2px solid rgba(250,235,215,0);
+
+}
+
+nav>div:hover {
+    border-bottom: 2px solid antiquewhite;
+    cursor: pointer;
+
 }
